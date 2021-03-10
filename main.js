@@ -1,5 +1,5 @@
 let array;
-fetch('../../json/episodes.json')
+fetch('episodes.json')
 .then(response => response.json())
 .then(data => {
     array = data;
