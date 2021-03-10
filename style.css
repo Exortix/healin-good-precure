@@ -1,0 +1,36 @@
+html {
+    overflow-y: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#main {
+    margin-top: 6vh;
+    background: url("https://i.gifer.com/47tv.gif") top center no-repeat;
+}
+
+body {
+    background-color: white;
+}
+
+body.dark-mode {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+}
+
+iframe#embedvideo {
+    max-width: 859px;
+    width: 859px;
+    height: 748px;
+}
+
+@media only screen and (max-width: 860px) {
+    iframe#embedvideo {
+        width: 100%;
+    }
+    #main {
+        margin-top: 2vh;
+        background: none;
+    }
+}
