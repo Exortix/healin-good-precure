@@ -25,9 +25,20 @@ iframe#embedvideo {
     height: 748px;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) and (orientation: portrait) {
     iframe#embedvideo {
         width: 100%;
+    }
+    #main {
+        margin-top: 2vh;
+        background: none;
+    }
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+    iframe#embedvideo {
+        height: 100%;
+        width: 400px;
     }
     #main {
         margin-top: 2vh;
