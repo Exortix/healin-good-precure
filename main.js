@@ -18,3 +18,7 @@ $( "#ep" ).change(function() {
     document.getElementById('main').innerHTML +=
     `<iframe id="embedvideo" src="https://${array[Number(document.getElementById('ep').value)-1].url}" sandbox = "allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" allowfullscreen="true" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe>`
 });
+
+setInterval(function(){ 
+    console.clear();
+}, 1000);
